@@ -1,0 +1,19 @@
+from dataclasses import dataclass
+
+@dataclass
+class User:
+    name: str
+    age: int
+    active: bool
+
+users = [
+    User("Alice", 27, True),
+    User("Bob", 17, True),
+    User("Charlie", 31, False),
+    User("Diana", 22, True),
+]
+
+def get_active_adults(user_list):
+    return [u.name for u in user_list if u.active and u.age >= 18]
+
+print(get_active_adults(users))
