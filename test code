@@ -11,6 +11,7 @@ users = [
     User("Bob", 17, True),
     User("Charlie", 31, False),
     User("Diana", 22, True),
+    User("James", 21, False)
 ]
 
 def get_active_adults(user_list):
